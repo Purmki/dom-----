@@ -192,6 +192,23 @@
 // buildingObjectLoop()
 
 
+//20
+//---------------------
+// function peopleObject(){
+// var numberOfPeople=+prompt("insert a number of people")
+// for(i=0; i<numberOfPeople; i++){
+//     theActualObject={
+//         firstName:prompt("insert a name"),
+//         adress:prompt("insert an adress")
+//     }
+//     document.getElementById("myList").innerHTML+=`
+//     <li>${theActualObject[i].firstName}</li>`
+// }
+
+// }
+// peopleObject()
+
+
 
 //22
 // function getAndReturnCountries(){
@@ -247,6 +264,212 @@
 //     tdArray[i].style="border: 1px solid;background:gray"
 // }
 
+//26 פונקציה שמקבלת אובייקט ומחזירה אותו למסך
+// function managerInfo (){
+// var manager={
+//     firstName:"bob",
+//     lastName: "habanai",
+//     age: 34,
+//     salary: 15000,
+// }
+// document.body.innerHTML+=`
+// <h1>${manager.firstName}</h1>
+// <h2>${manager.lastName}</h2>
+// <h3>${manager.age}</h3>
+// <h4>${manager.salary}</h4>`
+// }
+// managerInfo()
+
+
+
+
+//27  פונקציה שמקבלת אובייקט ומחזירה אותו למסך בצבע
+// function fruitInfo (){
+//     var fruit={
+//         firstName:"bob",
+//         lastName: "hatapuz",
+//         color: "orange",
+//         type: "orange",
+//     }
+//     document.body.style.color = "orange";
+//     document.body.innerHTML+=`
+//     <h1>${fruit.firstName}</h1>
+//     <h2>${fruit.lastName}</h2>
+//     <h3> ${fruit.color}</h3>
+//     <h4>${fruit.type}</h4>`
+//     }
+//     fruitInfo()
+
+
+//28 אובייקט של כיתה שמספר התלמידים רשום כמערך ומודפס למסך
+
+//  var students={
+//     numberOfStudents:5,
+//     kitaNumber: 4,
+//     studentsNames:["omer","sagi","matan","hila","ohad"]  
+//  }
+//  document.body.innerHTML+=`
+//  <h1>${students.numberOfStudents}</h1>
+//  <h2>${students.kitaNumber}</h2>
+//  ` 
+//  for(i=0; i<students.studentsNames.length; i++){
+//     document.body.innerHTML+=`
+//    <ul>
+//    <li>${students.studentsNames[i]}</li>
+//    </ul>`
+//  }
+
+
+//29 אובייקט שמקבל ערך חדש ומדפיס אותו למסך
+    // var kinderGarden={
+    //     ganenet: "yael",
+    //     numberOfChildrens: 10,
+    //     childrenNames: ["vfe","cerec","cerfre","ec","werf","wer"],
+       
+    // }
+    //     var newKey = prompt("Add a key:");
+    //     var newValue = prompt("Add a value:");
+    //     kinderGarden[newKey] = newValue;
+    // document.body.innerHTML+=`
+    // <h1>${kinderGarden.ganenet}</h1>
+    // <h2>${kinderGarden.numberOfChildrens}</h2>
+    // <h2>${kinderGarden[newKey]}</h2>
+    // `
+
+
+    // 30 פונקציה שמדפיסה לדיבים נפרדים נתונים מהמשתמש של אובייקט ונותנת תמונה
+    // function userProfile(){
+    //     var profile={
+    //         firstName:prompt("insert a name"),
+    //         lastName: prompt("insert a last name"),
+    //         picture: prompt("url"),
+    //         password: prompt("insert a password"),
+    //         email:prompt("insert an email")
+    //     }
+
+    //     var inside =document.getElementById("container")
+    //     inside.innerHTML+=`
+    //     <div>
+    //     <input type="text"><p>${profile.firstName}</p>
+    //     </div>
+    //     <div>
+    //     <input type="text"><p>${profile.lastName}</p>
+    //     </div>
+    //     <div>
+    //     <input type="password"><p>${profile.password}</p>
+    //     </div>
+    //     <div>
+    //     <input type="email"><p>${profile.email}</p>
+    //     </div>
+    //     <div>
+    //     <img src="${profile.picture}" alt="Profile Picture">
+    //     </div>`
+    // }
+    // userProfile()
+
+
+
+
+
+    //----------------------------------------------
+//     //31 קוד שלוקח כמה אובייקטים ושם אותם בטבלה
+//     var carArray=[]
+//     for(i=0; i<2; i++){
+//         carArray.push(
+//             {
+//             color: prompt("insert a color"),
+//             year:  prompt("insert a year"),
+//             company:  prompt("insert a company"),
+//         })
+//     }
+
+
+//     var tableInside= document.getElementById("container")
+//     tableInside.innerHTML+=` <table>
+//     <thead><th>color</th><th>year</th><th>company</th></thead>
+//     </table>
+//     <tbody>`
+//     for(i=0; i<carArray.length; i++){
+//      tableInside.innerHTML+=`
+//      <tr>
+//      <td>${carArray[i].color}</td>
+//      <td>${carArray[i].year}</td>
+//      <td>${carArray[i].company}</td>
+//      </tr>`
+//     }
+//     tableInside.innerHTML += `
+//         </tbody>
+//     </table>
+// `;
+
+
+
+//32 קוד שמקבל 3 אובייקטים של חתולים כמערך ומדפיס אותם למסך
+// var catArray=[]
+//     for(i=0; i<3; i++){
+//         catArray.push(
+//             {
+//             color: prompt("insert a color"),
+//             age:  prompt("insert an age"),
+//             firstName:  prompt("insert a name"),
+//         })
+//     }
+//     var pInside= document.getElementById("container")
+//     for(i=0; i<catArray.length; i++){
+//         pInside.innerHTML+=`
+//         <p>${catArray[i].color}</p>
+//         <p>${catArray[i].age}</p>
+//         <p>${catArray[i].firstName}</p>`
+//     }
+
+
+
+//33
+// var catArray=[]
+// var numberFromUser= +prompt("insert a number")
+//     for(i=0; i<numberFromUser; i++){
+//         catArray.push(
+//             {
+//             color: prompt("insert a color"),
+//             age:  prompt("insert an age"),
+//             firstName:  prompt("insert a name"),
+//         })
+//     }
+//     var pInside= document.getElementById("container")
+//     for(i=0; i<catArray.length; i++){
+//         pInside.innerHTML+=`
+//         <p>${catArray[i].color}</p>
+//         <p>${catArray[i].age}</p>
+//         <p>${catArray[i].firstName}</p>`
+//     }
+
+
+
+
+
+//35 מדפיס רק חתולים מעל גיל שנתיים (אבל חתולים במקום ילדים)
+
+
+// var catArray=[]
+// var numberFromUser= +prompt("insert a number")
+//     for(i=0; i<numberFromUser; i++){
+//         catArray.push(
+//             {
+//             color: prompt("insert a color"),
+//             age:  prompt("insert an age"),
+//             firstName:  prompt("insert a name"),
+//         })
+//     }
+//     var pInside= document.getElementById("container")
+//     for(i=0; i<catArray.length; i++){
+//         if(catArray[i].age>2){
+//         pInside.innerHTML+=`
+//         <h1>${catArray[i].age}</h1>
+//         <h1>${catArray[i].color}</h1>
+//         <h1>${catArray[i].firstName}</h1>
+//         `
+//     }
+//     }
 
 
 
@@ -255,13 +478,95 @@
 
 
 
+//37
+// function computerObjects (numberOfObjects){
+//     arrayObjects=[]
+//     for(i=0; i<numberOfObjects; i++){
+//         arrayObjects.push(
+//             {
+//                 company: prompt("insert a company"),
+//                 model:prompt("insert a model"),
+//                 weight:+prompt("insert a number of kilos"),
+//                 areThereAny: prompt("are there any?")
+//         }
+//         ) 
+//     }
+// }
+// computerObjects(2)
+
+// var computerPrint= document.getElementById("divContainer")
+// function printComputerInfo(){
+// for(i=0; i<arrayObjects.length; i++){
+//     computerPrint.innerHTML+=`
+//     <h1>${arrayObjects[i].areThereAny}</h1>`
+//     if(arrayObjects[i].weight>2){
+//         computerPrint.innerHTML+=`
+//         <h1>${arrayObjects[i].weight}</h1>`
+//     }
+// }
+// }
+// printComputerInfo()
+
+
+
+//38 פונקציות שיוצרות מערך של אובייקטים ומדפיסות את האובייקט תחת תנאים מסויימים
+
+// var teachersArray=[]
+// function teachersArrayFunction(arrayNumber){
+// for(i=0; i<arrayNumber; i++){
+//     teachersArray.push({
+//         fullName: prompt("insert a name"),
+//         salary: +prompt("insert a salary"),
+//         email: prompt("insert an email"),
+//         yearOfBirth: +prompt("insert a date of birth")
+//     })
+// }
+// }
+// teachersArrayFunction(3)
+// var inDiv= document.getElementById("container")
+// function teacherCheck(){
+//     for(i=0; i<teachersArray.length; i++){
+//         if(teachersArray[i].salary>100||teachersArray[i].yearOfBirth>1990){
+//             inDiv.innerHTML+=`
+//             <span>${teachersArray[i].salary}</span>
+//             <span>${teachersArray[i].yearOfBirth}</span>
+//             <span>${teachersArray[i].email}</span>
+//             <span>${teachersArray[i].fullName}</span>`
+
+//         }
+//     }
+// }
+// teacherCheck()
 
 
 
 
+//39
+//----------------------------------
+// var storeArray=[]
+// var tablesArray=[]
+// function tableArrayFunction(arrayNumber){
+// for(i=0; i<arrayNumber; i++){
+//     for(i=0; i<3; i++){
+//         storeArray.push(prompt("insert an store name"))}
+//     tablesArray.push({
+//         fullName: prompt("insert a name"),
+//         price: +prompt("insert a price"),
+//         arrayOfStores: storeArray
+// })
+// }
+// }
+// tableArrayFunction(2)
 
 
-
+// function printTables(){
+//     for (i = 0; i < tablesArray.length; i++) {
+//     mycontainer.innerHTML+=`
+//    <span>${tablesArray[i].fullName}</span> 
+//    <span>${tablesArray[i].arrayOfStores}</span>`
+// }
+// }
+// printTables()
 
 
 
